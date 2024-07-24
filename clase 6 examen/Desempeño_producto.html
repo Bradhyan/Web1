@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=}, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-color: rgb(224, 250, 241);
+        }
+
+        .bg-light{
+            background-image: url(imagen/El-método-de-14-pasos-para-dejar-de-postergar-las-cosas.jpg) ;
+            background-size: auto;
+            height: 10em;
+        }
+
+        .navbar-brand{
+            font-weight: 4em;
+        }
+        .titulo{
+            text-align: center;
+        }
+
+      
+        #parrafo1{
+            text-align: justify;
+            margin-left: 4em;
+        margin-right: 7em;
+        }
+
+        .parrafo2{
+            text-align: justify;
+            margin-left: 4em;
+        margin-right: 7em;
+        }
+    </style>
+  </body>
+</head>
+<body>
+    
+    <!--Barra de navegacion-->
+
+    <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand"><h3>El metodo de las cosas.</h3></a>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Busqueda</button>
+          </form>
+        </div>
+      </nav>
+      <br>
+      <br>
+
+      <h1 class="titulo">EL METODO DE LAS COSAS SEGUN LA FILOSOFIA HISTORICA</h1><BR></BR>
+
+      <div id="texto"></div><P id="parrafo1">Los métodos filosóficos son las diversas maneras que han utilizado los filósofos a lo largo de la historia del pensamiento humano para aproximarse al conocimiento. Hoy en día hay consenso en decir que la filosofía no pretende llegar a verdades absolutas, sino que busca una explicación para determinados aspectos humanos. <br><br>
+        
+        La filosofía es un diálogo intelectual continuo, es la indagación racional y constante sobre los problemas que pueden angustiar a una sociedad, para abordar cuestiones como la moral, la belleza, la verdad, la existencia, la mente, el conocimiento o el lenguaje. <br><br>
+        Quien hace filosofía está consciente de que el concepto al que se llega puede ser rebatido, revisado y sometido a la crítica. Se podría decir que las dos bases sobre las que se monta el quehacer filosófico son la forma de abordar un problema y la utilización de un discurso racional, mediante el cual se argumenta.</P></div><br><br>
+
+         
+        <button  style="background-color: rgb(210, 166, 166);", onclick="document.getElementById('parrafo1').style= 'font-size: 35px; color: black;'">Ampliar parrafo</button>
+        <button  style="background-color: rgb(210, 166, 166);" onclick="document.getElementById('parrafo1').style= 'font-size: 35px; color: blue;'">Cambiar color del anterior parrafo</button>
+        <button  style="background-color: rgb(210, 166, 166);" onclick="document.getElementById('parrafo1').style= 'font-size: 20px; color: black;'">Volver a estado inicial</button> <br><br><br>
+
+
+        <div id="formulario_divisas">
+            <center>
+                <h1>Conversor de divisas</h1>
+                Cantidad: <input type="range" id="cantidad" min="1" max="10000" value="0" onchange="convertir()">
+            
+                <span id="valor">0</span> <br><br>
+            
+                convertir de: <br><br>
+            
+                <select  id="de" onchange="convertir()">
+                    <option value="1">Euros</option>
+                    <option value="2">Pesos COP</option>
+                </select><br><br>
+                convertir a: <br><br>
+            
+                <select  id="a" onchange="convertir()">
+                    <option value="1">Euros</option>
+                    <option value="2">Pesos COP</option>
+                </select>
+                <p id="resultado"><h3>0</h3></p>
+
+               
+ 
+            
+            </center>
+               </div><br><br>
+
+               <h1 class="titulo">Método mayéutico </h1><br><br>
+
+               <p class="parrafo2">La mayéutica es hacer surgir la luz del entendimiento que hay en el intelecto de cada persona mediante el diálogo. Su principal exponente, y quien creó el método, fue Sócrates, perfeccionado por Platón, que fue su discípulo. Este método se desarrolló entre los siglos V y IV a.C. <br>
+
+
+                Mayéutica, en griego, quiere decir “arte de ayudar a parir”. La madre de Sócrates era partera, y el filósofo redefinió el concepto y lo aplicó a la filosofía como la “forma de ayudar a parir conocimientos”. <br>
+                
+                A través del diálogo pretendía que el interlocutor llegase a la verdad, pero descubriéndola por sí mismo. Para ello se valía del razonamiento y de la ironía (la llamada “Ironía socrática”), con la que le hacía entender al discípulo que lo que se sabe está por lo general basado en prejuicios. <br><br>
+                
+                La mayéutica socrática suponía que en los individuos se acumulaban conocimientos, ofrecidos por la tradición, vivencias y experiencias de generaciones anteriores, y mediante el diálogo se invitaba al interlocutor a dejar salir esos conocimientos, razonando, argumentando y debatiendo. <br>
+                
+                El filósofo, a través de preguntas, obliga (asiste al parto) al discípulo, quien finalmente “da a luz”, es decir, llega al conocimiento. <br><br>
+
+               </p><br><br><br>
+
+               <h1 class="titulo">METODO FACTORIAL</h1><BR></BR>
+
+            <P class="parrafo2">Se trata de multiplicar los número por la cantidad de factores que lo componen asi 5! = 5 x 4 x 3 x 2 x 1 = 120</P><br><br>
+
+            <button style="background-color: rgb(210, 166, 166)" onclick="factorial()">Encontrar factorial de un número</button>
+         <p id="factor"></p>
+
+         <script>
+            function factorial()
+{
+    num = parseInt (prompt("Ingrese el número a calcular"));
+    var total = 1;
+    for (i=1; i<=num; i++){
+        total = (total*i);
+    }
+    document.getElementById('factor').innerHTML="El factorial de "+num+" es "+total;
+}
+         </script>
+
+        
+
+               <h1 class="titulo">Método empirista</h1><br><br>
+
+               <p class="parrafo2">Este método se enfoca en la experiencia y la evidencia, a través de la percepción sensorial, para la generación de conocimiento. En otras palabras, partiendo del mundo sensible, se forman los conceptos.
+
+                El empirismo se traduciría como experiencia, y se desarrolla en Gran Bretaña en el siglo XVIII. Su principal exponente es David Hume, y suele contraponerse al método racionalista, más desarrollado en Europa continental.
+                
+                Para Hume, la mente humana es una especie de hoja en blanco, de tábula rasa, donde recibe información proveniente de lo que le rodea y de la naturaleza, a través de los sentidos.
+                
+                Desconfía de la razón y eleva aspectos como los sentimientos y la imaginación. Es fundamentalmente inductivo. Actualmente se lo relaciona con el cientificismo del siglo XX.</p><br><br>
+
+                <h1 class="titulo">Método fenomenológico</h1><br><br>
+                <p class="parrafo2">Fue un movimiento filosófico fundado por Edmund Husserl a comienzos del siglo XX, y pretende estudiar el mundo desde la experiencia subjetiva. Es decir, intenta explicar los fenómenos (los objetos externos al sujeto) a partir de la conciencia subjetiva. <br><br>
+
+                    Para la fenomenología, la conciencia tiene intencionalidad en cuanto es conciencia de algo, necesita de un objeto ajeno a ella para ser conciencia; en este sentido, no basta la conciencia del “yo” sino una abierta a la realidad y de estar en el mundo, intencionalmente. <br>
+                    
+                    La fenomenología influyó decisivamente en otros métodos aplicados a otras disciplinas, como la literatura, la religión o la psicología. Y para el surgimiento del existencialismo.</p>
+}           
+</body>
+
+</html>
