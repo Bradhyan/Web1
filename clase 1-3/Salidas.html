@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualización de javascript</title>
+    <style>
+        body{
+            background-color: beige;
+        }
+    </style>
+</head>
+<body>
+   <h2> Posibilidades de visualización de JavaScript </h2><br>
+
+   <p>En javascript  se puede mostrar datos diferentes formas:
+    <br>
+    <br>
+   <b> 1. innerHTML</b> Me sirve para escribir en un elemento de HTML(En una etiqueta)
+   <br>
+   <b>2. document.write():</b>A diferencia del anterior no se necesita especificar en que etiqueta se  va a ejecutar, sino que se comporta como una. <br>
+   <b>3. window.alert():</b>Me sirve para escribir en un cuadro de alerta
+   <br>
+   
+   <b> 4. console.log()</b>Me sirve para mostrar un dato o un resultado en la consola de un navegador.
+   <br><br>
+   <h2>inner.HTML</h2>
+   <p>
+    Para acceder a un elemento de HTML desde JavaScript se utiliza el document.getElementById, seguido del nombre del atributo id que tenga una etiqueta <br>
+    Id como atributo define que elemento voy a seleccionar y el <b>innerHTML</b>define que quiero escribir sobre ese elemento elegido.
+    <br><br>
+    <i>Ejemplo</i>
+   </p>
+   <br>
+
+<h3 id="titulo">
+
+</h3>
+<button onclick="document.getElementById('titulo').innerHTML='titulo desde JavaScript'">Escribir título</button>
+
+
+   </p>
+
+   <h2>Document.write()</h2>
+   <button onclick="document.write('10+3')">Mostrar una suma </button><!--A diferencia del otro, este me va a sobreescribir sobre todo el documento, por ende cuando le doy clic se pierde todo lo demás-->
+
+   <h3>Window.alert</h3>
+   <p>Genera una ventana de alerta</p>
+   <script> /*Desde ahi es codigo de JavaScript, por eso siempre me aparece cuando cargo la pagina.*/
+   /* window.alert("Alerta desde JavaScript");*/
+   </script>
+   <button onclick="window.alert('Alerta desde JavaScript');">Mostrar alerta</button>
+
+   <h3>Console.log</h3>
+   <p>Para poder visualizar lo que estamos escribiendo, se debe de hacer por medio de la consola del navegador, asi a simple vista no es visible</p>
+   <script>
+    console.log("Texto desde JavaScript para la consola")
+   </script>
+</body>
+</html>

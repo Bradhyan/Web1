@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--JavaScript puede cambiar los valores de3 los atributos de HTML, por medio de eventos (dar clic, escribir, pasar el mouse )-->
+    <!--El ejemplo que vamos a realizar es que a una imagen le vamos a cambiar el atributo src (ruta) por otra imagen, por medio de unos botones                                                                                                                                                                                                                                                                                           -->
+
+    <!-- Se debe de hacer a partir de un evento (onclick)-->
+    <!--¿Como podemos seleccionar un id  de un idéntificador de un elemento de  HTML  desde JavaScript: document.getElementById(Id que queremos traer)-->
+
+<h2>Ejemplos con JavaScript</h2>
+
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quae cupiditate, corrupti adipisci nam enim laborum aspernatur, velit quisquam odit nesciunt expedita. Esse tenetur eveniet ullam nihil consectetur, ipsa nisi! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum optio assumenda fugit aut nemo perspiciatis omnis praesentium. Consectetur sunt, dignissimos repudiandae officiis commodi magni mollitia aliquid vero recusandae repellat minus.</p>
+
+<button onclick="document.getElementById('bombillo').src='imagen/encendido.gif'" >Encender la luz del bombillo</button>
+<button  onclick="document.getElementById('bombillo').src='imagen/apagado.gif'">apagar la luz del bombillo</button>
+<img src="imagen/apagado.gif" alt="" style="width: 100px;"  id="bombillo">
+
+
+<!--Ejemplo de cambio de texto-->
+<h3>Ejemplo de cambio de texto</h3>
+
+<p id="texto"> Texto inicial</p>
+
+<button onclick="document.getElementById('texto'). innerHTML='texto que se cambia'"> Cambiar texto </button>
+
+<!--Hasta el momento se han visto dos formas de hacer cambios en JavaScript 
+1. cuando se quiere cambiar el atribusot (src)
+2. cuando se quiere escribir en un elemento de HTML (innerHTML)
+3. Cuando se quiere aplicar estilos de css: 
+
+- .style ='propiedad: 'valor; propiedad:valor' (Cuando se dan mas de una propiedad)
+- .Style.propiedad='valor'(Cuando es una sola propiedad)
+-->
+
+<H3>Cambiar estilos (CSS) a un HTML</H3>
+
+<p id="catexto">Texto Cambia de tamaño</p>
+<button onclick="document.getElementById('catexto').style= 'font-size: 35px; color: green;'">Cambiar propiedades CSS</button>
+
+<!--Cuando quiero cambiar un estilo de CSS desde JavaScript  .style.propiedad='valor'-->
+<!--Tamaño de texto: fontSize='35pxs'-->
+
+<p id="desaparece">Texto que desaparece </p>
+<button onclick="document.getElementById('desaparece').style.display='None'" ondblclick="document.getElementById('desaparece').style.display='flex'">Ocultar texto</button>
+
+<p id="aparece" style="color:white ;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde sequi nisi iure delectus deleniti autem quibusdam! Totam, cumque ipsa provident debitis et labore eos voluptatem odio sed quo iure unde?</p>
+<button onclick="document.getElementById('aparece').style.color='black'" ondblclick="document.getElementById('aparece').style.color='white'">aparecer parrafo</button>
+
+<!--con la funcion ondblclick en la misma etiqueta me deja volver a utilizar el mismo boton para que me desaparezca el texto-->
+
+
+
+
+</body>
+</html>
