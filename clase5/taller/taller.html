@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de JavaScript </title>
+    <style>
+        body{
+            background-color: rgb(221, 247, 247);
+        }
+    </style>
+</head>
+
+<body>
+    <!--Ejercicio 1 -->
+    <h3>Ejercio uno: 1. Crea y llama una función que recibe el ancho y el alto de un rectángulo y calcula su superficie.</h3>
+
+    <button onclick="calcular1()">Calcular superficie</button>
+    <p id="Ej1"></p>
+
+ 
+    <!--Ejercicio 2-->
+
+   <h3 > Ejercicio 2: Crear y llamar a una función que recibe la velocidad en Km/hora y la muestra en metros/hora y millas/hora</h3>
+   
+    <button onclick="calcular2()">Convertir velocidad</button>
+    <p id="Ej2mts"></p>
+   <p id="Ej2mll"></p>
+
+   <!--Ejercicio 3-->
+
+   <h3>Ejercicio 3: calcula el Perímetro(radio); Perímetro de la circunferencia = 2*Math.PI*Radio y calcula Área(radio); Área de la circunferencia = Math.PI*Radio2</h3>
+   <button onclick="Circulo()">Calcular</button>
+   <p id="Perimetro_circulo"></p>
+   <p id="Area_circulo"></p>
+
+   <!--Ejercicio 4-->
+
+   <h3> Ejercicio cuatro: 4.	Crea una función donde pases como parámetro un nombre e imprimirlo en pantalla; Validar que el dato ingresado no sea un número, de ser así se debe decir en pantalla ingrese un nombre válido.</h3>
+
+   <button onclick="calcular4()">Ver nombre</button>
+   <p id="nom"></p>
+
+   <!--Ejercicio 5-->
+
+   <h3>Ejercicio 5:	Muestra todas las operaciones básicas (suma, resta, multiplicación, división), pidiendo al usuario 2 números.  </h3>
+
+   <button onclick="operaciones()">calcular</button>
+   <p id="suma"></p>
+   <p id="resta"></p>
+   <p id="multiplicacion"></p>
+<p id="division"></p><br>
+
+<!--Ejercicio 6-->
+
+<h3>
+   EJERCICIO 6: Cree un conversor de temperatura, investigando la fórmula para pasar grados Celsius a Fahrenheit y viceversa, pida al usuario la temperatura a convertir y muestra en pantalla lo siguiente:
+</h3><br>
+
+   <div id="formulario_temperatura">
+<center>
+    <h1>Conversor de temperatura</h1>
+    Cantidad: <input type="range" id="cantidad" min="-100" max="300" value="0" onchange="convertir()">
+
+    <span id="valor">0</span> <br><br>
+
+    convertir de: <br><br>
+
+    <select  id="de" onchange="convertir()">
+        <option value="1">Grados Centigrados</option>
+        <option value="2">Grados Fahrenheit</option>
+    </select><br><br>
+    convertir a: <br><br>
+
+    <select  id="a" onchange="convertir()">
+        <option value="1">Grados Centigrados</option>
+        <option value="2">Grados Fahrenheit</option>
+    </select>
+    <p id="resultado"></p>
+
+</center>
+   </div><br><br>
+
+   <!--Ejercicio 7-->
+
+   <h3> Ejercicio 7: Calcule el índice de masa muscular de una persona (IMC=peso/estatura x altura), pidiendo como datos su estatura y peso. imprima en pantalla lo siguiente:
+    ○ Si el IMC es por debajo de 18.5 : Bajo peso debe ir al nutricionista
+    ○ Si el IMC es 18.5—24.9 : Normal
+    ○ Si el IMC es 25.0—29.9 : Sobrepeso
+    ○ Si el IMC es 30.0 o más : Obeso debe ir al nutricionista</h3>
+
+    <button onclick="Masamuscular()">Calcular</button>
+    <p id="imc"></p>
+
+    <!--Ejercicio 8-->
+  
+   <h3>Ejercicio 8:   Cree una función que pida el nombre del usuario e imprima el nombre y un mensaje que diga Bienvenido + nombre.</h3>
+
+   <button onclick="calcular8()">Ejecutar</button>
+   <p id="8"></p>
+
+   <!--Ejercicio 9 -->
+
+<h3>Ejercicio 9:	 Cree una función que pida el precio de un producto y la cantidad y diga al usuario el precio total.</h3>
+
+<button onclick="calcular9()">calcular</button>
+<p id="precio"></p>
+
+<!--Ejercicio 10 -->
+
+<h3>Ejercicio 10</h3>
+<button onclick= "c_fecha()">calcular</button>
+<p id="dias1"></p>
+
+
+</body>
+<script src="taller.js"></script>
+
+
+</html>

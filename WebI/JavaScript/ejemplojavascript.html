@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--JavaScript puede cambiar los valores de los atributos de HTML, por medio de eventos(dar click, escribir, pasar el mouse)-->
+    <!--Ejemplo: A una imagen le vamos a cambiar el atributo src(ruta) por otra imagen, por medio de unos botones-->
+    <!--Se debe de hacer a partir de un evento(onclick)-->
+    <!--Como podemos seleccionar un id de un elemento de HTML desde JavaScript:document.getElementById('id que queremos traer')-->
+    <h2>Ejemplos con JavaScript</h2>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam nemo sequi dolor odit excepturi, blanditiis, autem nam quae aliquam distinctio dignissimos. Blanditiis dolorem cupiditate aspernatur, iste tempore delectus? Illo, veniam.
+    </p>
+    <button onclick="document.getElementById('bombillo').src='Imagenes/encendido.gif'">Encender la Luz del Bombillo</button>
+    <img src="Imagenes/apagado.gif" alt="" style="width:100px;" id="bombillo">
+    <button onclick="document.getElementById('bombillo').src='Imagenes/apagado.gif'">Apagar la Luz del Bombillo</button>
+    <h3>Ejemplo de cambio de texto</h3>
+    <p id="texto">Texto inicial</p>
+    <button onclick="document.getElementById('texto').innerHTML='Texto que se cambia'">Cambiar Texto</button>
+    <!--Hasta el momento se han visto 2 formas de hacer cambios con JavaScript-->
+    <!--1.cuando se quiere cambiar un atributo (src)-->
+    <!--2.Cuando se quiere sobre escribir en un elemnto de HTML (innerHTML)-->
+    <!--3.Cuando se quiere aplicar estilos de css:
+    -.style='propiedad:valor;propiedad:valor' (cuando se dan mas de una propiedad)
+    -.style.propiedad='valor'(cuando es una sola)-->
+    <h3>Cambiar estilos (css) a un HTML</h3>
+    <p id="tamaño">Texto cambia der tamaño</p>
+    <button onclick="document.getElementById('tamaño').style='font-size:35px;color:red;'">Cambiar propiedades css</button>
+     <!--.style.propiedad='valor'-->
+    <!--tamaño de texto:fontSize='35px'-->
+    <p id="ocultar">Texto que se desaparece</p>
+    <button onclick="document.getElementById('ocultar').style='display:none;'">Ocultar texto</button>
+    <p id="texto2">Texto que aparece y desaparece</p>
+    <button onclick="document.getElementById('texto2').style='display:none;'" ondblclick="document.getElementById('texto2').style='display:flex;'">Aparecer texto</button>
+   
+</body>
+</html>

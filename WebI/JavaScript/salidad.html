@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizacion de JavaScript</title>
+</head>
+<body>
+   <h2>Posibilidades de Visualización de JavaScript</h2> 
+   <p>
+        En JavaScript se puede mostrar datos de diferentes formas:
+        <br> <br>
+      <b>1.innerHTML: </b> Me sirve para escribir en un elemento de HTML(un elemento de HTML es una etiqueta) <br> <br>
+      <b>2.document.write():</b> A diferencia del anterior, no se necesita especificar en que etiqueta se va a ejecutar, sino que se comporta como una <br> <br>
+      <b>3.window.alert(): </b> Me sirve para escribir en un cuadro de alerta <br> <br>
+      <b>4.console.log(): </b> Me sirve para mostrar un dato o un resultado en la consola de un navegador
+   </p>
+   <h2>innerHTML</h2>
+   <p>
+        Para acceder a un elemento de HTML(a una etiqueta) desde JavaScript se utiliza el document.getElementById, seguido del nombre del atributo id que tenga una etiqueta <br>
+        Id como atributo define a que elemento voy a seleccionar y el <b>innerHTML</b> define que quiero escribir sobre ese elemento elegido <br> <br>
+        <i>Ejemplo:</i>
+   </p>
+   <h3 id="titulo"></h3>
+   <button onclick="document.getElementById('titulo').innerHTML='Título desde JavaScript'">Escribir título</button>
+   <h2>document.write()</h2>
+   <button onclick="document.write(10 + 3)">Mostrar una suma</button>
+   <h3>window.alert()</h3>
+   <p>Genera una venta de alerta</p>
+  <!-- <script> Desde ahi es codigo de JavaScript*/
+        window.alert("Alerta desde JavaScript");
+   </script>-->
+   <button onclick="window.alert('Alerta desde JavaScript')">Mostrar Alerta</button>
+   <h3>console.log</h3>
+   <p>Para poder visualizar lo que estamos escribiendo, se debe de hacer por medio de la consola del navegador, asi a simple vista no es visible</p>
+   <script>
+        console.log("Texto desde JavaScrip para consola");
+   </script>
+</body>
+</html>
